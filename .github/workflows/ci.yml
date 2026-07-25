@@ -73,7 +73,7 @@ jobs:
 
       - name: Cache npm downloads
         if: hashFiles('web/package-lock.json') != ''
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ~/.npm
           key: ${{ runner.os }}-npm-web-${{ hashFiles('web/package-lock.json') }}
@@ -112,7 +112,7 @@ jobs:
 
       - name: Cache npm downloads
         if: hashFiles('worker/package-lock.json') != ''
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ~/.npm
           key: ${{ runner.os }}-npm-worker-${{ hashFiles('worker/package-lock.json') }}

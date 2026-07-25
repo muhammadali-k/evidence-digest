@@ -189,7 +189,7 @@ jobs:
       - name: Deploy to GitHub Pages
         if: ${{ !inputs.skip_deploy }}
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 
       - name: Write run summary
         if: ${{ !cancelled() }}

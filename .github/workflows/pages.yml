@@ -70,7 +70,7 @@ jobs:
           worker-url: ${{ vars.VITE_WORKER_URL }}
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: web/dist
 
